@@ -1,429 +1,676 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>NPT Solutions</title>
-	<link href="https://fonts.googleapis.com/css?family=Heebo:400,700|IBM+Plex+Sans:600" rel="stylesheet">
-	<link rel="stylesheet" href="dist/css/style.css">
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-	<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <meta charset="utf-8">
+    <title>FlutterGrow - Desarrollamos tus apps</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+   
 </head>
 
-<body class="is-boxed has-animations">
-	<div class="body-wrap boxed-container">
-		<header class="site-header">
-			<div class="container">
-				<div class="site-header-inner">
-					<div class="brand header-brand">
-						<h1 class="m-0">
-							<a href="#">
-								<img class="header-logo-image asset-light" src="dist/images/logo-light.svg" alt="Logo">
-								<img class="header-logo-image asset-dark" src="dist/images/logo-dark.svg" alt="Logo">
-							</a>
-						</h1>
-					</div>
-				</div>
-			</div>
-		</header>
-
-		<main>
-			<section class="hero">
-				<div class="container">
-					<div class="hero-inner">
-						<div class="hero-copy">
-							<h1 class="hero-title mt-0">¡Creemos tu app ideal!</h1>
-							<p class="hero-paragraph">Transforma tu visión en realidad: Tu app a medida</p>
-							<div class="hero-cta">
-								<a class="button button-primary"
-									href="https://wa.me/51972696048?text=Estoy%20interesado%20en%20sus%20servicios">Contactarme</a>
-								<div class="lights-toggle">
-									<!-- <input id="lights-toggle" type="checkbox" name="lights-toggle" class="switch" checked="checked"> -->
-									<!-- <label for="lights-toggle" class="text-xs"><span>Turn me <span class="label-text">dark</span></span></label> -->
-								</div>
-								<a class="hero-mail-contact" href="mailto:nptlatamsolutions@gmail.com">nptlatamsolutions@gmail.com</a>
-							</div>
-
-						</div>
-						<div class="hero-media">
-							<div class="header-illustration">
-								<img class="header-illustration-image asset-light" src="dist/images/header-illustration-light.svg"
-									alt="Header illustration">
-								<img class="header-illustration-image asset-dark" src="dist/images/header-illustration-dark.svg"
-									alt="Header illustration">
-							</div>
-							<div class="hero-media-illustration">
-								<img class="hero-media-illustration-image asset-light" src="dist/images/hero-media-illustration-light.svg"
-									alt="Hero media illustration">
-								<img class="hero-media-illustration-image asset-dark" src="dist/images/hero-media-illustration-dark.svg"
-									alt="Hero media illustration">
-							</div>
-
-							<div class="hero-media-container">
-								<img class="hero-media-image asset-light" src="dist/images/homi.png" width="538" height="380" viewBox="0 0 538 380"
-									alt="Hero media">
-								<img class="hero-media-image asset-dark" src="dist/images/homi.png" width="538" height="380" viewBox="0 0 538 380"
-									alt="Hero media">
-							</div>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Cargando...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
 
 
-						</div>
-					</div>
-				</div>
-			</section>
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0" id="home">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="m-0">MatrixFlu</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto py-0">
+                        <a href="#home" class="nav-item nav-link active">Inico</a>
+                        <a href="#about" class="nav-item nav-link">Nosotros</a>
+                        <a href="#feature" class="nav-item nav-link">Servicios</a>
+                        <!-- <a href="#pricing" class="nav-item nav-link">Pricing</a> -->
+                        <a href="#review" class="nav-item nav-link">Comentarios</a>
+                        <a href="#contact" class="nav-item nav-link">Contáctanos</a>
+                    </div>
+                    <!-- <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Start Free Trial</a> -->
+                </div>
+            </nav>
 
-			<section class="features section">
-				<div class="container">
-					<div class="features-inner section-inner has-bottom-divider">
-						<div class="features-header text-center">
-							<div class="container-sm">
-								<h2 class="section-title mt-0">App & Web Admin</h2>
-								<p class="section-paragraph">E-commerce</p>
-								<div class="features-image">
-									<img class="features-illustration asset-dark" src="dist/images/features-illustration-dark.svg"
-										alt="Feature illustration">
-									<img class="features-box asset-dark" src="dist/images/features-box-dark.svg" alt="Feature box">
-									<img class="features-illustration asset-dark" src="dist/images/features-illustration-top-dark.svg"
-										alt="Feature illustration top">
-									<img class="features-illustration asset-light" src="dist/images/features-illustration-light.svg"
-										alt="Feature illustration">
-									<img class="features-box asset-light" src="dist/images/open.png" alt="Feature box">
-									<!-- <img class="features-illustration asset-light" src="dist/images/openmed.png" alt="Feature illustration top"> -->
-								</div>
-								<a class="button button-primary"
-									href="https://wa.me/51972696048?text=Estoy%20interesado%20en%20su%20producto%20Marketplace">Me interesa</a>
-							</div>
-							<ul class="footer-links list-reset">
-								<li>
-									<img style="  width: 80px;
-									height: 79px" src="dist/images/appstore.svg" alt="SVG Image">
-								</li>
-								<li>
-									<img style="  width: 80px;
-									height: 79px" src="dist/images/playstore.png" alt="SVG Image">
-								</li>
-
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="container">
-					<div class="features-inner section-inner has-bottom-divider">
-						<div class="features-header text-center">
-							<div class="container-sm">
-								<h2 class="section-title mt-0">Para Empresas</h2>
-								<p class="section-paragraph">Tus clientes puedan reservar o agendar citas</p>
-								<div class="features-image">
-									<img class="features-illustration asset-dark" src="dist/images/features-illustration-dark.svg"
-										alt="Feature illustration">
-									<img class="features-box asset-dark" src="dist/images/features-box-dark.svg" alt="Feature box">
-									<img class="features-illustration asset-dark" src="dist/images/features-illustration-top-dark.svg"
-										alt="Feature illustration top">
-									<img class="features-illustration asset-light" src="dist/images/features-illustration-light.svg"
-										alt="Feature illustration">
-
-									<img class="features-box asset-light" src="dist/images/miski.png" alt="Feature illustration top">
-								</div>
-								<a class="button button-primary"
-									href="https://wa.me/51972696048?text=Estoy%20interesado%20en%20su%20producto%20ReservaApp">Lo quiero!</a>
+            <div class="container-xxl bg-primary hero-header">
+                <div class="container px-lg-5">
+                    <div class="row g-5">
+                        <div class="col-lg-8 text-center text-lg-start">
+                            <h1 class="text-white mb-4 animated slideInDown">Digitaliza tu negocio</h1>
+                            <p class="text-white pb-3 animated slideInDown">Somos tus aliados en el mundo del desarrollo de aplicaciones personalizadas. ¿Tienes una idea innovadora o una necesidad específica que no puede ser cubierta por aplicaciones estándar? Estamos aquí para convertir tu visión en una aplicación funcional y exitosa.</p>
+                            <a href="" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill me-3 animated slideInLeft">Leer más</a>
+                            <a href="" class="btn btn-secondary-gradient py-sm-3 px-4 px-sm-5 rounded-pill animated slideInRight">Contáctanos</a>
+                        </div>
+                        <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="owl-carousel screenshot-carousel">
+                                <!-- <img class="img-fluid" src="img/ima1.png" alt=""> -->
+                                <img class="img-fluid" src="img/ima2.png" alt="">
+                                <img class="img-fluid" src="img/ima3.png" alt="">
+                                <!-- <img class="img-fluid" src="img/screenshot-4.png" alt="">
+                                <img class="img-fluid" src="img/screenshot-5.png" alt=""> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
 
 
-								<p></p>
-								<p style="font-size: 20px;
-								color: #000000; /* Cambia el color según tus preferencias */
-								font-weight: normal;">Aprovecha el descuento especial de <span style="font-size: 20px;
-								color: #000000; /* Cambia el color según tus preferencias */
-								font-weight: bold;" class="price">$100.0</span>.</p>
-							</div>
-							<ul class="footer-links list-reset">
-								<li>
-									<img style="  width: 80px;
-									height: 79px" src="dist/images/appstore.svg" alt="SVG Image">
-								</li>
-								<li>
-									<img style="  width: 80px;
-									height: 79px" src="dist/images/playstore.png" alt="SVG Image">
-								</li>
-
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="container">
-					<div class="features-inner section-inner has-bottom-divider">
-						<div class="features-header text-center">
-							<div class="container-sm">
-								<h2 class="section-title mt-0">Fitness</h2>
-								<p class="section-paragraph">Tus clientes pueden recibir un plan de rutinas físicas y reservas clases personalizadas
-								</p>
-								<div class="features-image">
-									<img class="features-illustration asset-dark" src="dist/images/features-illustration-dark.svg"
-										alt="Feature illustration">
-									<img class="features-box asset-dark" src="dist/images/features-box-dark.svg" alt="Feature box">
-									<img class="features-illustration asset-dark" src="dist/images/features-illustration-top-dark.svg"
-										alt="Feature illustration top">
-									<img class="features-illustration asset-light" src="dist/images/features-illustration-light.svg"
-										alt="Feature illustration">
-
-									<img class="features-box asset-light" src="dist/images/qenqo.png" alt="Feature illustration top">
-								</div>
-								<a class="button button-primary"
-									href="https://wa.me/51972696048?text=Estoy%20interesado%20en%20su%20producto%20QenqoApp">Me interesa!</a>
+        <!-- About Start -->
+        <!-- <div class="container-xxl py-5" id="about">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <h5 class="text-primary-gradient fw-medium">Creemos en la singularidad de cada idea</h5>
+                        <h1 class="mb-4">La experiencia del usuario siempre es lo importante</h1>
+                        <p class="mb-4">Si estás listo para llevar tu visión al siguiente nivel y crear tu propia aplicación personalizada, has llegado al lugar correcto</p>
+                        <div class="row g-4 mb-4">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="d-flex">
+                                    <i class="fa fa-cogs fa-2x text-primary-gradient flex-shrink-0 mt-1"></i>
+                                    <div class="ms-3">
+                                        <h2 class="mb-0" data-toggle="counter-up">1234</h2>
+                                        <p class="text-primary-gradient mb-0">Active Install</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                                <div class="d-flex">
+                                    <i class="fa fa-comments fa-2x text-secondary-gradient flex-shrink-0 mt-1"></i>
+                                    <div class="ms-3">
+                                        <h2 class="mb-0" data-toggle="counter-up">1234</h2>
+                                        <p class="text-secondary-gradient mb-0">Clients Reviews</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill mt-3">Read More</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="img-fluid wow fadeInUp" data-wow-delay="0.5s" src="img/about.png">
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- About End -->
 
 
-							</div>
+        <!-- Features Start -->
+        <div class="container-xxl py-5" id="feature">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">¿Que nos hace distintos?</h5>
+                    <h1 class="mb-5">Nuestro servicios</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                <i class="fa fa-podcast text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-3">Sesiones personalizadas</h5>
+                            <p class="m-0">Comenzamos con una consulta detallada para comprender tus objetivos, desafíos y visiones</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                <i class="fa fa-layer-group text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-3">Planificación de Entregables</h5>
+                            <p class="m-0">Realizamos presentaciones que te permitirán visualizar el progreso y la dirección de tu proyecto</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                <i class="fa fa-edit text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-3">Identificación de mejoras</h5>
+                            <p class="m-0">Contamos con la experiencia en el desarrollo de aplicaciones usadas por más de 10 paises, lo cúal nos permite brindarte un feedback para tu app</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                <i class="fa fa-mobile-alt text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-3">Desarrollo Multiplataforma</h5>
+                            <p class="m-0">Comprometidos por brindarte aplicaciones multiplataforma, tanto para dispositivos Android & iOS </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                <i class="fa fa-eye text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-3">Diseño UX-UI</h5>
+                            <p class="m-0">Realizamos un análisis profundo para comprender a tus usuarios, sus necesidades y comportamientos</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                <i class="fa fa-cloud text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-3">Experiencia Digital</h5>
+                            <p class="m-0">Adoptamos las últimas tecnologías para ofrecer experiencias digitales vanguardistas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Features End -->
 
-							<ul class="footer-links list-reset">
-								<li>
-									<img style="  width: 80px;
-									height: 79px" src="dist/images/appstore.svg" alt="SVG Image">
-								</li>
-								<li>
-									<img style="  width: 80px;
-									height: 79px" src="dist/images/playstore.png" alt="SVG Image">
-								</li>
 
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="container">
-					<div class="features-inner section-inner has-bottom-divider">
-						<div class="features-header text-center">
-							<div class="container-sm">
-								<h2 class="section-title mt-0">Turismo & Viajes</h2>
-								<p class="section-paragraph">Tus clientes pueden reservar paquetes turísticos o servicios</p>
-								<div class="features-image">
-									<img class="features-illustration asset-dark" src="dist/images/features-illustration-dark.svg"
-										alt="Feature illustration">
-									<img class="features-box asset-dark" src="dist/images/features-box-dark.svg" alt="Feature box">
-									<img class="features-illustration asset-dark" src="dist/images/features-illustration-top-dark.svg"
-										alt="Feature illustration top">
-									<img class="features-illustration asset-light" src="dist/images/features-illustration-light.svg"
-										alt="Feature illustration">
+        <!-- Screenshot Start -->
+        <!-- <div class="container-xxl py-5">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.1s">
+                        <h5 class="text-primary-gradient fw-medium">Screenshot</h5>
+                        <h1 class="mb-4">User Friendly interface And Very Easy To Use Fitness App</h1>
+                        <p class="mb-4">Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit clita duo justo eirmod magna dolore erat amet</p>
+                        <p><i class="fa fa-check text-primary-gradient me-3"></i>Diam dolor diam ipsum et tempor sit</p>
+                        <p><i class="fa fa-check text-primary-gradient me-3"></i>Aliqu diam amet diam et eos labore</p>
+                        <p class="mb-4"><i class="fa fa-check text-primary-gradient me-3"></i>Clita erat ipsum et lorem et sit</p>
+                        <a href="" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill mt-3">Read More</a>
+                    </div>
+                    <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="owl-carousel screenshot-carousel">
+                            <img class="img-fluid" src="img/screenshot-1.png" alt="">
+                            <img class="img-fluid" src="img/screenshot-2.png" alt="">
+                            <img class="img-fluid" src="img/screenshot-3.png" alt="">
+                            <img class="img-fluid" src="img/screenshot-4.png" alt="">
+                            <img class="img-fluid" src="img/screenshot-5.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Screenshot End -->
 
-									<img class="features-box asset-light" src="dist/images/rutus.png" alt="Feature illustration top">
-								</div>
-								<a class="button button-primary"
-									href="https://wa.me/51972696048?text=Estoy%20interesado%20en%20su%20producto%20RutusApp">Lo quiero!</a>
-							</div>
-							<ul class="footer-links list-reset">
-								<li>
-									<img style="  width: 80px;
-									height: 79px" src="dist/images/appstore.svg" alt="SVG Image">
-								</li>
-								<li>
-									<img style="  width: 80px;
-									height: 79px" src="dist/images/playstore.png" alt="SVG Image">
-								</li>
 
-							</ul>
-						</div>
-					</div>
-				</div>
-			</section>
+        <!-- Process Start -->
+        <div class="container-xxl py-5">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center pb-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">¿Cómo empezar?</h5>
+                    <h1 class="mb-5">3 Pasos fáciles</h1>
+                </div>
+                <div class="row gy-5 gx-4 justify-content-center">
+                    <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                                <i class="fa fa-cog fa-3x text-white"></i>
+                            </div>
+                            <h5 class="mt-4 mb-3">Descubrimiento y Planificación</h5>
+                            <p class="mb-0">Agendamos una reunión para entender tu visión; desarrollar el plan de trabajo, brindar fechas y actividades a detalle </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                                <i class="fa fa-address-card fa-3x text-white"></i>
+                            </div>
+                            <h5 class="mt-4 mb-3">Ejecución de Proyecto y Pruebas </h5>
+                            <p class="mb-0">En el proceso sometemos tu aplicación a pruebas de usabilidad para evaluar la experiencia del usuario.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                                <i class="fa fa-check fa-3x text-white"></i>
+                            </div>
+                            <h5 class="mt-4 mb-3">Entrega de Aplicaciones Android & iOS</h5>
+                            <p class="mb-0">Te brindamos los links de las apps en las tiendas AppStore & PlayStore para que puedan descargarlas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Process Start -->
 
-			<section class="hero">
-				<div class="features-header text-center" stlye="padding: 10px 50px;">
-					<div class="container-sm">
-						<h2 class="section-title mt-0">¿Quienes somos?</h2>
-						<p class="section-paragraph">Enamorados de la innovación tecnológica y comprometidos con crear soluciones digitales que
-							generen un impacto significativo en la sociedad.</p>
 
-					</div>
-					<div class="container-sm">
+        <!-- Download Start -->
+        <!-- <div class="container-xxl py-5">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <img class="img-fluid wow fadeInUp" data-wow-delay="0.1s" src="img/about.png">
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <h5 class="text-primary-gradient fw-medium">Download</h5>
+                        <h1 class="mb-4">Download The Latest Version Of Our App</h1>
+                        <p class="mb-4">Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit clita duo justo eirmod magna dolore erat amet</p>
+                        <div class="row g-4">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                                <a href="" class="d-flex bg-primary-gradient rounded py-3 px-4">
+                                    <i class="fab fa-apple fa-3x text-white flex-shrink-0"></i>
+                                    <div class="ms-3">
+                                        <p class="text-white mb-0">Available On</p>
+                                        <h5 class="text-white mb-0">App Store</h5>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                                <a href="" class="d-flex bg-secondary-gradient rounded py-3 px-4">
+                                    <i class="fab fa-android fa-3x text-white flex-shrink-0"></i>
+                                    <div class="ms-3">
+                                        <p class="text-white mb-0">Available On</p>
+                                        <h5 class="text-white mb-0">Play Store</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Download End -->
 
-					</div>
-				</div>
-				<div style="  float: left;
-				width: 50%;
-				padding: 10px 50px;
-				box-sizing: border-box; ">
-					
-					<div class="image">
-						<img src="dist/images/rr.png" alt="Imagen 1" style="display: inline-block;
-													border-radius: 20%;
-													overflow: hidden;
-													width: 120px; /* Ajusta el tamaño según tus preferencias */
-													height: 150px; /* Ajusta el tamaño según tus preferencias */
-													margin-right: 30px; ">
-					</div>
-					<div class="image-description">
-						<h3 class="image-title">Renzo R.</h3>
-						<p class="image-text">Mobile Developer Engineer </p>
-					
-					</div>
-					
-					<div class="image">
-						<img src="dist/images/fel.png" alt="Imagen 1" style="display: inline-block;
-													border-radius: 20%;
-													overflow: hidden;
-													width: 120px; /* Ajusta el tamaño según tus preferencias */
-													height: 150px; /* Ajusta el tamaño según tus preferencias */
-													margin-right: 30px; ">
-					</div>
-					<div class="image-description">
-						<h3 class="image-title">Felix A.</h3>
-						<p class="image-text">Fullstack Developer Engineer</p>
-						
-					</div>
-					<div class="image">
-						<img src="dist/images/lovo.jpeg" alt="Imagen 1" style="display: inline-block;
-													border-radius: 20%;
-													overflow: hidden;
-													width: 120px; /* Ajusta el tamaño según tus preferencias */
-													height: 150px; /* Ajusta el tamaño según tus preferencias */
-													margin-right: 30px; ">
-					</div>
-					<div class="image-description">
-						<h3 class="image-title">Renzo L.</h3>
-						<p class="image-text">FullStack Developer Engineer</p>
-						
-					</div>
-					<div class="image-container ">
-						<div class="image">
-							<img src="dist/images/j.jpeg" alt="Imagen 1" style="display: inline-block;
-														border-radius: 20%;
-														overflow: hidden;
-														width: 120px; /* Ajusta el tamaño según tus preferencias */
-													height: 150px; /* Ajusta el tamaño según tus preferencias */
-														margin-right: 30px; ">
-						</div>
-						<div class="image-description">
-							<h3 class="image-title">Julio H.</h3>
-							<p class="image-text">Backend Developer Engineer</p>
+
+        <!-- Pricing Start -->
+        <!-- <div class="container-xxl py-5" id="pricing">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">Pricing Plan</h5>
+                    <h1 class="mb-5">Choose Your Plan</h1>
+                </div>
+                <div class="tab-class text-center pricing wow fadeInUp" data-wow-delay="0.1s">
+                    <ul class="nav nav-pills d-inline-flex justify-content-center bg-primary-gradient rounded-pill mb-5">
+                        <li class="nav-item">
+                            <button class="nav-link active" data-bs-toggle="pill" href="#tab-1">Monthly</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-bs-toggle="pill" href="#tab-2">Yearly</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content text-start">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row g-4">
+                                <div class="col-lg-4">
+                                    <div class="bg-light rounded">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class="text-primary-gradient mb-1">Starter Plan</h4>
+                                            <span>Powerful & Awesome Features</span>
+                                        </div>
+                                        <div class="p-4 pt-0">
+                                            <h1 class="mb-3">
+                                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>14.99<small
+                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Month</small>
+                                            </h1>
+                                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Get Started</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="bg-light rounded border">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class="text-primary-gradient mb-1">Advance Plan</h4>
+                                            <span>Powerful & Awesome Features</span>
+                                        </div>
+                                        <div class="p-4 pt-0">
+                                            <h1 class="mb-3">
+                                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>24.99<small
+                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Month</small>
+                                            </h1>
+                                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <a href="" class="btn btn-secondary-gradient rounded-pill py-2 px-4 mt-4">Get Started</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="bg-light rounded">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class="text-primary-gradient mb-1">Premium Plan</h4>
+                                            <span>Powerful & Awesome Features</span>
+                                        </div>
+                                        <div class="p-4 pt-0">
+                                            <h1 class="mb-3">
+                                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>34.99<small
+                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Month</small>
+                                            </h1>
+                                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Get Started</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane fade p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-4">
+                                    <div class="bg-light rounded">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class="text-primary-gradient mb-1">Starter Plan</h4>
+                                            <span>Powerful & Awesome Features</span>
+                                        </div>
+                                        <div class="p-4 pt-0">
+                                            <h1 class="mb-3">
+                                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>114.99<small
+                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Yearly</small>
+                                            </h1>
+                                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Get Started</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="bg-light rounded border">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class="text-primary-gradient mb-1">Advance Plan</h4>
+                                            <span>Powerful & Awesome Features</span>
+                                        </div>
+                                        <div class="p-4 pt-0">
+                                            <h1 class="mb-3">
+                                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>124.99<small
+                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Yearly</small>
+                                            </h1>
+                                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Get Started</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="bg-light rounded">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class="text-primary-gradient mb-1">Premium Plan</h4>
+                                            <span>Powerful & Awesome Features</span>
+                                        </div>
+                                        <div class="p-4 pt-0">
+                                            <h1 class="mb-3">
+                                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>134.99<small
+                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Yearly</small>
+                                            </h1>
+                                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Get Started</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Pricing End -->
+
+
+        <!-- Testimonial Start -->
+        <div class="container-xxl py-5" id="review">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">Testimonios</h5>
+                    <h1 class="mb-5">¿Que dicen nuestros clientes?</h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="testimonial-item rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/miski.png" style="width: 85px; height: 85px;">
+                            <div class="ms-4">
+                                <h5 class="mb-1">Miskimayo</h5>
+                                <p class="mb-1">Aplicativo Android & iOS</p>
+                                <div>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-0">Me gustó como quedo la aplicación; tiene buenos diseños y se centra en el usuario</p>
+                    </div>
+                    <div class="testimonial-item rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/open.png" style="width: 85px; height: 85px;">
+                            <div class="ms-4">
+                                <h5 class="mb-1">Openmed</h5>
+                                <p class="mb-1">Aplicativo Android</p>
+                                <div>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-0">Para nuestro primer MVP resultó de mucha ayuda; un trabajo en equipo que supero mis expectativas, gracias</p>
+                    </div>
+                    <!-- <div class="testimonial-item rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/testimonial-3.jpg" style="width: 85px; height: 85px;">
+                            <div class="ms-4">
+                                <h5 class="mb-1">Client Name</h5>
+                                <p class="mb-1">Profession</p>
+                                <div>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    </div> -->
+                    <!-- <div class="testimonial-item rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/testimonial-4.jpg" style="width: 85px; height: 85px;">
+                            <div class="ms-4">
+                                <h5 class="mb-1">Client Name</h5>
+                                <p class="mb-1">Profession</p>
+                                <div>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
+        <style>
+            @keyframes parpadeo {
+                0% { opacity: 1; }
+                50% { opacity: 0; }
+                100% { opacity: 1; }
+            }
+    
+            .boton-parpadeo {
+                animation: parpadeo 1s infinite;
+            }
+    
+            /* Estilos adicionales del botón */
+            .boton-parpadeo {
+                display: inline-block;
+                padding: 10px 20px;
+                font-size: 16px;
+                text-align: center;
+                text-decoration: none;
+                cursor: pointer;
+                color: #fff;
+                background-color: #3498db;
+                border: none;
+                border-radius: 5px;
+            }
+        </style>
+        
+        <!-- Contact Start -->
+        <div class="container-xxl py-5" id="contact">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">Contáctanos</h5>
+                    <h1 class="mb-5">¡A UN SÓLO CLICK!</h1>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <div class="wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="col-12 text-center">
+                                <button class="btn btn-primary-gradient rounded-pill py-3 px-5" onclick="compartirWhatsApp()" >Escríbenos al WhatsApp</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact End -->
+        <script>
+            function compartirWhatsApp() {
+                var mensaje = encodeURIComponent("Hola desde tu sitio web vengo y me interesa tus servicios");
+                var numeroPeru = "51972696048"; // Reemplaza con el número correcto
+    
+                var enlaceWhatsApp = "https://wa.me/" + numeroPeru + "?text=" + mensaje;
+                window.open(enlaceWhatsApp, '_blank');
+            }
+        </script>
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-3">
+                        <h4 class="text-white mb-4">Dirección</h4>
+                        <p><i class="fa fa-map-marker-alt me-3"></i>San Borja, Lima, PERU</p>
+                        <p><i class="fa fa-phone-alt me-3"></i>+51 941 124 197</p>
+                        <p><i class="fa fa-phone-alt me-3"></i>+51 972 696 048</p>
+                        <p><i class="fa fa-envelope me-3"></i>nptlatamsolutions@gmail.com</p>
+                        <div class="d-flex pt-2">
+                            <!-- <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a> -->
+                            <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/profile.php?id=100084997517472"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/nptsolutions"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/company/npt-solutions"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h4 class="text-white mb-4">Accesos rápidos</h4>
+                        <a class="btn btn-link" href="">Acerca de nosotros</a>
+                        <a class="btn btn-link" href="">Contáctanos</a>
+                        <!-- <a class="btn btn-link" href="">Privacy Policy</a> -->
+                        <!-- <a class="btn btn-link" href="">Terms & Condition</a> -->
+                        <a class="btn btn-link" href="">¿Eres freelance? Escríbenos y únete a la misión!</a>
+                    </div>
+                    <!-- <div class="col-md-6 col-lg-3">
+                        <h4 class="text-white mb-4">Popular Link</h4>
+                        <a class="btn btn-link" href="">About Us</a>
+                        <a class="btn btn-link" href="">Contact Us</a>
+                        <a class="btn btn-link" href="">Privacy Policy</a>
+                        <a class="btn btn-link" href="">Terms & Condition</a>
+                        <a class="btn btn-link" href="">Career</a>
+                    </div> -->
+                    <!-- <div class="col-md-6 col-lg-3">
+                        <h4 class="text-white mb-4">Newsletter</h4>
+                        <p>Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulpu</p>
+                        <div class="position-relative w-100 mt-3">
+                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Your Email" style="height: 48px;">
+                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary-gradient fs-4"></i></button>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="container px-lg-5">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">SolarTech Consulting</a>, Todos los derechos reservados. 
 							
-						</div>
-					</div>
-				</div>
-
-				<div style="  float: left;
-				width: 50%;
-				padding: 10px;
-				box-sizing: border-box; ">
-					<!-- Contenido de la segunda columna -->
-					<div class="image">
-						<img src="dist/images/h.jpeg" alt="Imagen 1" style="display: inline-block;
-													border-radius: 20%;
-													overflow: hidden;
-													width: 120px; /* Ajusta el tamaño según tus preferencias */
-													height: 150px; /* Ajusta el tamaño según tus preferencias */
-													margin-right: 30px; ">
-					</div>
-					<div class="image-description">
-						<h3 class="image-title">Harold G.</h3>
-						<p class="image-text">FullStack Developer IoT Engineer </p>
-						
-					</div>
-					<div class="image-container ">
-						<div class="image">
-							<img src="dist/images/w.png" alt="Imagen 1" style="display: inline-block;
-														border-radius: 20%;
-														overflow: hidden;
-														width: 120px; /* Ajusta el tamaño según tus preferencias */
-													height: 150px; /* Ajusta el tamaño según tus preferencias */
-														margin-right: 30px; ">
-						</div>
-						<div class="image-description">
-							<h3 class="image-title">Wendy R.</h3>
-							<p class="image-text">Flutter Developer Engineer</p>
-						</div>
-					</div>
-					<div class="image-container ">
-						<div class="image">
-							<img src="dist/images/jho.png" alt="Imagen 1" style="display: inline-block;
-												border-radius: 20%;
-												overflow: hidden;
-												width: 120px; /* Ajusta el tamaño según tus preferencias */
-													height: 150px; /* Ajusta el tamaño según tus preferencias */
-												margin-right: 30px; ">
-						</div>
-						<div class="image-description">
-							<h3 class="image-title">Jhony V.</h3>
-							<p class="image-text">Sr Frontend Engineer </p>
-							
-						</div>
-					</div>
-					<div class="image">
-						<img src="dist/images/ja.png" alt="Imagen 1" style="display: inline-block;
-													border-radius: 20%;
-													overflow: hidden;
-													width: 120px; /* Ajusta el tamaño según tus preferencias */
-													height: 150px; /* Ajusta el tamaño según tus preferencias */
-													margin-right: 30px; ">
-					</div>
-					<div class="image-description">
-						<h3 class="image-title">Javier E.</h3>
-						<p class="image-text">Mobile Developer Jr</p>
-						
-					</div>
-					
-					
-				</div>
-
-			</section>
+							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+							<!-- Diseñador por <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                            </br>
+                            Distributed By <a class="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a> -->
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="">Home</a>
+                                <!-- <a href="">Cookies</a>
+                                <a href="">Help</a>
+                                <a href="">FQAs</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
 
 
-		</main>
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up text-white"></i></a>
+    </div>
 
-		<footer class="site-footer has-top-divider">
-			<div class="container">
-				<div class="site-footer-inner">
-					<div class="brand footer-brand">
-						<a href="#">
-							<img class="asset-light" src="dist/images/logo-light.svg" alt="Logo">
-							<img class="asset-dark" src="dist/images/logo-dark.svg" alt="Logo">
-						</a>
-					</div>
-					<!-- <ul class="footer-links list-reset">
-                        <li>
-                            <a href="#">Contact</a>
-                        </li>
-                        <li>
-                            <a href="#">About us</a>
-                        </li>
-                        <li>
-                            <a href="#">FAQ's</a>
-                        </li>
-                        <li>
-                            <a href="#">Support</a>
-                        </li>
-                    </ul> -->
-					<!-- <ul class="footer-social-links list-reset">
-                        <li>
-                            <a href="#">
-                                <span class="screen-reader-text">Linkedin</span>
-                                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M6.023 16L6 9H3V6h3V4c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V6H13l-1 3H9.28v7H6.023z" fill="#FFF"/>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="screen-reader-text">Twitter</span>
-                                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M16 3c-.6.3-1.2.4-1.9.5.7-.4 1.2-1 1.4-1.8-.6.4-1.3.6-2.1.8-.6-.6-1.5-1-2.4-1-1.7 0-3.2 1.5-3.2 3.3 0 .3 0 .5.1.7-2.7-.1-5.2-1.4-6.8-3.4-.3.5-.4 1-.4 1.7 0 1.1.6 2.1 1.5 2.7-.5 0-1-.2-1.5-.4C.7 7.7 1.8 9 3.3 9.3c-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.3 1.6 2.3 3.1 2.3-1.1.9-2.5 1.4-4.1 1.4H0c1.5.9 3.2 1.5 5 1.5 6 0 9.3-5 9.3-9.3v-.4C15 4.3 15.6 3.7 16 3z" fill="#FFF"/>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="screen-reader-text">Google</span>
-                                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7.9 7v2.4H12c-.2 1-1.2 3-4 3-2.4 0-4.3-2-4.3-4.4 0-2.4 2-4.4 4.3-4.4 1.4 0 2.3.6 2.8 1.1l1.9-1.8C11.5 1.7 9.9 1 8 1 4.1 1 1 4.1 1 8s3.1 7 7 7c4 0 6.7-2.8 6.7-6.8 0-.5 0-.8-.1-1.2H7.9z" fill="#FFF"/>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul> -->
-					<div class="footer-copyright">&copy; 2023</div>
-				</div>
-			</div>
-		</footer>
-	</div>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-	<script src="dist/js/main.min.js"></script>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
